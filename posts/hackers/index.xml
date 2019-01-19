@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackers on Musings</title>
+    <link>https://blog.ethanwilliams.me/posts/hackers/</link>
+    <description>Recent content in Hackers on Musings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Ethan Williams</copyright>
+    <lastBuildDate>Sat, 19 Jan 2019 16:05:24 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ethanwilliams.me/posts/hackers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musings: A Blog on Musings</title>
+    <link>https://blog.ethanwilliams.me/</link>
+    <description>Recent content in Musings: A Blog on Musings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Ethan Williams</copyright>
+    <lastBuildDate>Sat, 19 Jan 2019 16:31:31 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ethanwilliams.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello, World!</title>
+      <link>https://blog.ethanwilliams.me/posts/hello-world/</link>
+      <pubDate>Sat, 19 Jan 2019 15:46:39 -0500</pubDate>
+      
+      <guid>https://blog.ethanwilliams.me/posts/hello-world/</guid>
+      <description>Welcome to my new blog. I&amp;rsquo;ve been meaning to set this up for quite a while now, but never really got around to it. I was finally given some incentive when I started a class called Hackers in the Bazaar, which required a blog to post responses to class readings (those responses can be found here).
+That said, I hope to use this blog for much more than just assigned posts.</description>
+    </item>
+    
+  </channel>
+</rss>

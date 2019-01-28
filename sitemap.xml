@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.ethanwilliams.me/posts/hackers/reading01-hardware-hackers/</loc>
+    <lastmod>2019-01-27T18:50:44-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.ethanwilliams.me/</loc>
     <lastmod>2019-01-19T16:31:31-05:00</lastmod>
     <changefreq>monthly</changefreq>

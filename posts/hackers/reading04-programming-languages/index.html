@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Musings  | Musings: A Blog</title>
+    <title>Musings  | Reading 04: Programming Languages</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -29,33 +29,38 @@
     
 
     
-      <link href="https://blog.ethanwilliams.me/index.xml" rel="alternate" type="application/rss+xml" title="Musings" />
-      <link href="https://blog.ethanwilliams.me/index.xml" rel="feed" type="application/rss+xml" title="Musings" />
-    
 
-    <meta property="og:title" content="Musings: A Blog" />
-<meta property="og:description" content="Random and not-so-random thoughts." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.ethanwilliams.me/" />
-<meta property="og:updated_time" content="2019-01-19T16:31:31-05:00"/>
+    <meta property="og:title" content="Reading 04: Programming Languages" />
+<meta property="og:description" content="Paul Graham is right that your choice of programming language matters. He&#39;s wrong about most everything else." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.ethanwilliams.me/posts/hackers/reading04-programming-languages/" /><meta property="article:published_time" content="2019-02-24T19:39:08-05:00"/>
+<meta property="article:modified_time" content="2019-02-24T19:39:08-05:00"/>
 
-<meta itemprop="name" content="Musings: A Blog">
-<meta itemprop="description" content="Random and not-so-random thoughts.">
+<meta itemprop="name" content="Reading 04: Programming Languages">
+<meta itemprop="description" content="Paul Graham is right that your choice of programming language matters. He&#39;s wrong about most everything else.">
 
+
+<meta itemprop="datePublished" content="2019-02-24T19:39:08-05:00" />
+<meta itemprop="dateModified" content="2019-02-24T19:39:08-05:00" />
+<meta itemprop="wordCount" content="748">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Musings: A Blog"/>
-<meta name="twitter:description" content="Random and not-so-random thoughts."/>
+<meta name="twitter:title" content="Reading 04: Programming Languages"/>
+<meta name="twitter:description" content="Paul Graham is right that your choice of programming language matters. He&#39;s wrong about most everything else."/>
 
   </head>
 
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://blog.ethanwilliams.me/images/tracks.jpg');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-dark-gray">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://blog.ethanwilliams.me" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -131,133 +136,55 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Musings: A Blog
-        </h1>
-        
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
-            Random and not-so-random thoughts.
-          </h2>
-        
-      </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    <p>Welcome to my blog. To learn more about me, visit my <a href="https://ethanwilliams.me">main site</a>.</p>
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        HACKERS
+      </p>
+      <h1 class="f1 athelas mb1">Reading 04: Programming Languages</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-02-24T19:39:08-05:00">February 24, 2019</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><!-- How important is the choice of programming language in software development and computer science? What is lacking in our current set of tools? What ideas or features will continue to persist far into the future? -->
+
+<p>Paul Graham is right that your choice of programming language matters. He&rsquo;s wrong about most everything else.</p>
+
+<p>What programming language you pick when you start a project can be the difference between a project that&rsquo;s near impossible and a project that can be finished in a month. Different languages, and the libraries and frameworks that go along with them, are often very well suited to certain tasks, making them very easy (or even trivial), while being completely unsuited for other tasks, making them needlessly complex and difficult. Languages can also be the difference between a webapp that&rsquo;s unbearably slow and laggy and a service that loads in an instant.</p>
+
+<p>However, this conversation is much more nuanced than Graham makes it out to be. Graham describes the spectrum of programming languages as a one-dimensional, static affair, where certain languages are immutably more or less powerful than others, and one should always use the language at the top of the spectrum (which, if he is to be believed, is undoubtedly Lisp). I reject this idea. Certain languages are suited to certain tasks. Even if Lisp can do things that Python cannot, there are many more facets of merit to a language than simply what it can do, and many other factors must be considered in the cost-benefit equation when considering a language to use. How easy is the language to use (this itself is much more nuanced than Graham&rsquo;s simple metric of program length)? How readable and maintainable will the codebase be? <em>How performant is it</em> (more on this later)<em>?</em> Is it worth the considerable added man-hours required for me to learn an entirely new language (indeed a new way of thinking) in order to complete this project? These are all questions that Graham dismisses out of hand.</p>
+
+<p>My biggest issue with Graham&rsquo;s discussion on languages, however, is performance. Graham doesn&rsquo;t think very highly of performance, going so far as to say it doesn&rsquo;t matter at all, and <em>any</em> tradeoff between efficiency and programming ease should always be taken in favor of the ease of the programmer. This is a view which is widespread in the tech industry currently, and technology has suffered immensely for it. Yes, it&rsquo;s true that programmer time is generally more valuable than machine time, especially as computers continue to become more and more powerful. But that is only true to a point, and currently the industry is miles beyond that point. Take the web as an example: modern Internet connections, such as Eduroam here at ND, operate at 150 megabits/second. This is thousands of times faster than the dial-up connections of the 90&rsquo;s (56kbps). Even mobile internet, at 4G LTE (20-30 Mbps), is several orders of magnitude faster than the internet of years past. By all reasonable expectations, we should be able to instantly load any webpage. Yes, webpages have become more feature-rich, and those features come at a performance cost, but is today&rsquo;s web one thousand times more functional, to make up for its equivalent loss in efficiency? Also in my own experience my phone will often completely refuse to load many web services if it drops to a 3G connection. 3G is roughly 3Mbps. How is that not enough to connect to and update GroupMe??? Text messaging, of all things, apparently takes more bandwidth than the highest-performant Internet connections powering AIM in its heyday.</p>
+
+<p>Also, why is my text editor almost 900MB? Windows 3 was 15MB. How can a text editor justify being even 10 times as big as an entire operating system, let alone 60? What could possibly be taking up that much space in my text editor (and subsequently, extending load times)? In the case of Atom, it&rsquo;s simple: Electron. A ridiculous framework that packages Chromium with every app built using it, just so that GitHub can write a desktop app in Javascript. Of course Electron is not the cause of all software bloat, but it&rsquo;s indicative of the widespread trend to completely disregard performance. Almost no instruction is given in college CS programs in the area of real-world software efficiency, except in abstract terms of algorithmic complexity (and perhaps a bit of discussion in Data Structures). Apps are written on top of huge frameworks which run libraries which execute inside managed runtime environments running in virtual machines. The quest for developer convenience, for ever more layers of abstraction, has led us to software with crippling bloat and laughable performance. And it doesn&rsquo;t look like it will end any time soon.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
 
   </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-       
-          <h1 class="flex-none">
-            Recent Posts
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/hackers/reading04-programming-languages/" class="color-inherit dim link">
-            Reading 04: Programming Languages
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Paul Graham is right that your choice of programming language matters. He&rsquo;s wrong about most everything else.
-What programming language you pick when you start a project can be the difference between a project that&rsquo;s near impossible and a project that can be finished in a month. Different languages, and the libraries and frameworks that go along with them, are often very well suited to certain tasks, making them very easy (or even trivial), while being completely unsuited for other tasks, making them needlessly complex and difficult.
-        </div>
-          <a href="/posts/hackers/reading04-programming-languages/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/hackers/reading03-hackers-and-painters/" class="color-inherit dim link">
-            Reading 03: Hackers and Painters
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Paul Graham writes that hackers are creators, makers more similar to artists than to engineers. He goes so far as to say that the term &ldquo;software engineering&rdquo; is misleading, that hackers should be less concerned with how to do something than what to do. This is a silly distinction: great hacks often don&rsquo;t do completely new things, they do something that has already been done, but in a novel way. Hackers should very much be concerned with how things are done.
-        </div>
-          <a href="/posts/hackers/reading03-hackers-and-painters/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-      </section>
-
-      
-      <section class="w-100">
-        <h1 class="f3">More</h1>
-        
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/hackers/reading01-hardware-hackers/" class="link black dim">
-              Reading 01: Hardware Hackers
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/hackers/reading00-true-hackers/" class="link black dim">
-              Reading 00: True Hackers
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/hello-world/" class="link black dim">
-              Hello, World!
-            </a>
-          </h2>
-        
-
-        
-        
-          <a href="/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
-        
-        </section>
-      
-
-      </div>
-  
 
     </main>
     <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">

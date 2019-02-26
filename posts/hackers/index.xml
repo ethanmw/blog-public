@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Reading 04: Programming Languages</title>
+      <link>https://blog.ethanwilliams.me/posts/hackers/reading04-programming-languages/</link>
+      <pubDate>Sun, 24 Feb 2019 19:39:08 -0500</pubDate>
+      
+      <guid>https://blog.ethanwilliams.me/posts/hackers/reading04-programming-languages/</guid>
+      <description>Paul Graham is right that your choice of programming language matters. He&amp;rsquo;s wrong about most everything else.
+What programming language you pick when you start a project can be the difference between a project that&amp;rsquo;s near impossible and a project that can be finished in a month. Different languages, and the libraries and frameworks that go along with them, are often very well suited to certain tasks, making them very easy (or even trivial), while being completely unsuited for other tasks, making them needlessly complex and difficult.</description>
+    </item>
+    
+    <item>
       <title>Reading 03: Hackers and Painters</title>
       <link>https://blog.ethanwilliams.me/posts/hackers/reading03-hackers-and-painters/</link>
       <pubDate>Mon, 18 Feb 2019 23:06:26 -0500</pubDate>
